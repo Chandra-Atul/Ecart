@@ -1,16 +1,16 @@
 {
-  "name": "e-shop-tutorial",
+  "name": "e-shop",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": "18.x"
+    "node": "21.x"
   },
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "author": "shahriar Sajeeb",
+  "author": "Atul Chandra",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

@@ -40,7 +40,7 @@ router.post(
 
       const activationToken = createActivationToken(seller);
 
-      const activationUrl = `https://eshop-cfl.vercel.app/activation/${activationToken}`;
+      const activationUrl = `http://localhost:3000/activation/${activationToken}`;
 
       try {
         await sendMail({

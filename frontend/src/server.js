@@ -1,2 +1,2 @@
-export const server = "https://ecart-backend-xi.vercel.app/api/v2";
-export const backend_url = "https://ecart-backend-xi.vercel.app/";
+export const server = "https://eshop-backend-eosin.vercel.app/api/v2";
+export const backend_url = "https://eshop-backend-eosin.vercel.app/";

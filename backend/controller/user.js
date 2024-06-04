@@ -102,9 +102,12 @@ router.post(
 router.post(
   "/login-user",
   catchAsyncErrors(async (req, res, next) => {
-
     try {
       const { email, password } = req.body;
+
+      console.log("I am in backend login page");
+      console.log("email is: ");
+      console.log(email);
 
       if (!email || !password) {
         return next(new ErrorHandler("Please provide all fields!", 400));
@@ -125,7 +128,9 @@ router.post(
       sendToken(user, 201, res);
     } catch (error) {
       console.error("Login error:", error);
-      return next(new ErrorHandler("Login failed, please try again later", 500));
+      return next(
+        new ErrorHandler("Login failed, please try again later", 500)
+      );
     }
   })
 );
